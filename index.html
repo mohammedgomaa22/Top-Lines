@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطوط القمة | Top Lines</title>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!-- Start Scroll Up -->
+    <button class="scrolling animate-bounce fixed bottom-7 -right-20 px-3 py-2 rounded-xl text-xl font-medium duration-500 z-[222]">Up</button>
+    <!-- End Scroll Up -->
+    <!-- Start Navbar -->
+    <nav class="navbar sticky top-0 z-[111] overflow-hidden transition-colors duration-500">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <!-- Start Logo -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="./imgs/logo_2.png" alt="Top Lines">
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <!-- Start Nav -->
+                <div class="flex flex-1 items-center justify-center sm:items-stretch">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="ul flex lg:gap-7">
+                            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium duration-300"
+                                aria-current="page">الصفحة الرئيسية</a>
+                            <a href="#whoAre"
+                                class="rounded-md px-3 py-2 text-lg font-medium duration-300">من نحن</a>
+                            <a href="#services"
+                                class="rounded-md px-3 py-2 text-lg font-medium duration-300"> خدماتنا</a>
+                            <a href="#offer"
+                                class="rounded-md px-3 py-2 text-lg font-medium duration-300"> عروضنا</a>
+                            <a href="#contact"
+                                class="rounded-md px-3 py-2 text-lg font-medium duration-300">اتصل بنا</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Nav -->
+                <!-- Start Mode -->
+                <div class="mode w-9 h-9 ml-2 flex justify-center items-center rounded-full overflow-hidden text-2xl cursor-pointer duration-500">
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+                <!-- End Mode -->
+                <!-- Start Search -->
+                <!-- <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div class="search hidden md:block mr-11">
+                        <input class="outline-none text-base px-3 py-2 rounded-md bg-gray-800 hover:bg-gray-900 duration-500 text-white" type="search" placeholder="ابحث" aria-label="Search">
+                    </div>
+                </div> -->
+                <!-- End Search -->
+                <!-- Mobile menu button-->
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <button type="button"
+                        class="toggle-btn inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white duration-300"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+
+                        <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block"-->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+                        
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden relative" id="mobile-menu">
+            <div class="ul toggle-nav opacity-0 absolute -right-5 w-0 overflow-hidden space-y-1 px-2 pb-3 pt-2 duration-700">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="active block rounded-md px-3 py-2 text-base font-medium duration-300"
+                    aria-current="page">الصفحة الرئيسية</a>
+                <a href="#whoAre"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">من نحن</a>
+                <a href="#services"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300"> خدماتنا</a>
+                <a href="#offer"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300"> عروضنا</a>
+                <a href="#contact"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------------ -->
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <div class="landing bg-li flex items-center transition-colors duration-500">
+        <div class="container flex justify-center sm:justify-between items-center flex-wrap lg:flex-nowrap mx-auto px-5">
+            <div class="text relative">
+                <h1 class="color-dark m-0">شــركــة <span class="color-main">خطــوط القمــة</span><br> للأعمال العصرية</h1>
+                <a href="#contact">
+                    <button class="main-btn text-xl relative overflow-hidden">
+                        تواصل معنا
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="pic relative hidden lg:block">
+                <img src="imgs/landing-image.png" alt="landing img">
+            </div>
+        </div>
+        <!-- <div class="text text-center">
+            <h1 class="m-0 text-4xl font-bold color-dark">Taste the Creativity</h1>
+            <p class="text-gray-500 mt-2 font-medium">We make awesome graphic and web design</p>
+        </div>
+        <button class="btn">
+            <a class="block main-btn" href="#portfolio">Get Started</a>
+        </button> -->
+    </div>
+    <!-- End Landing -->
+    <!-- Start Who Are We -->
+    <div id="whoAre" class="whoAre bg-wh pt-20 pb-20 transition-colors duration-500">
+        <div class="container mx-auto px-5">
+            <div class="main-title mb-20 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">مــن نحــن</h2>
+                <p class="uppercase text-gray-500">شركة خطوط القمة</p>
+            </div>
+            <div class="who-text mx-auto color-dark">
+                <p> شركة رائدة في مجال تأسيس الشركات وتقديم الخدمات الاستشارية في سلطنة
+                عمان. نحن ملتزمون بتقديم حلول شاملة ومخصصة لعملائنا الذين يرغبون في إنشاء وتأسيس شركات ناجحة في السوق المحلية.
+                
+                يتميز فريقنا المتخصص وذو الخبرة بالمعرفة العميقة بالتشريعات والقوانين المحلية في سلطنة عمان، مما يمكننا من توفير المشورة
+                القانونية والاستشارات الاقتصادية والإدارية اللازمة لعملائنا. نحن نعمل على توفير مجموعة واسعة من الخدمات، بما في ذلك
+                تحليل السوق ودراسة الجدوى، وإعداد الوثائق القانونية والمالية، وترتيب المسائل الإدارية واللوجستية.
+                
+                نحن نهدف إلى تسهيل عملية تأسيس الشركات وتحقيق نجاحها، حيث نعتبر تحقيق أهداف عملائنا أمرًا حاسمًا بالنسبة لنا. نحن نضمن
+                التعامل السري والمهني، ونسعى لبناء علاقات طويلة الأمد مع عملائنا عبر تقديم الدعم والمشورة المستمرة بعد تأسيس الشركة.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Who Are We -->
+    <!-- Start services -->
+    <div class="services pt-20 pb-20 transition-colors duration-500 bg-li" id="services">
+        <div class="container mx-auto px-5 text-center">
+            <div class="main-title mb-20 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">خدمـاتنـا</h2>
+                <p class="uppercase text-gray-500">شركة خطوط القمة</p>
+            </div>
+            <!-- ------------------- -->
+                        <!-- Text Header -->
+            <p class="mb-4 color-dark">نقدم مجموعة واسعة من الخدمات لمساعدة العملاء في تأسيس وإدارة الشركات.<br> بعض الخدمات التي يمكن للشركة تقديمها تشمل ما يلي:</p>
+            <!-- BOXES -->
+            <div class="boxes">
+                <!-- BOX-1 -->
+                <div class="box">
+                    <img src="imgs/icon//New folder/buildings.png" alt="">
+                    <h3>تأسيس الشركات</h3>
+                    <p>تقوم الشركة بمساعدة العملاء في جميع جوانب تأسيس الشركة، بدءًا من إعداد الوثائق اللازمة وتسجيل الشركة في الجهات الحكومية
+                    المعنية.</p>
+                </div>
+                <!-- BOX-2 -->
+                <div class="box">
+                    <img src="imgs/icon/New folder/2-advice.png" alt="">
+                    <h3>الاستشارات القانونية</h3>
+                    <p>تقدم الشركة استشارات قانونية شاملة ومتخصصة فيما يتعلق بالقوانين والتشريعات المحلية لسلطنة عمان. تشمل هذه الاستشارات
+                    مسائل التشريعات التجارية والعقود وحماية حقوق الملكية الفكرية وغيرها من المسائل القانونية ذات الصلة.</p>
+                </div>
+                <!-- BOX-3 -->
+                <div class="box">
+                    <img src="imgs/icon/New folder/3-profit-growth.png" alt="">
+                    <h3>الاستشارات الاقتصادية والمالية</h3>
+                    <p>تقوم الشركة بتقديم استشارات اقتصادية ومالية لمساعدة العملاء في وضع خطط أعمال فعالة وتحليل الجدوى الاقتصادية وتقديم
+                    النصائح المالية الملائمة لتحقيق أهدافهم.</p>
+                </div>
+                <!-- BOX-4 -->
+                <div class="box">
+                    <img src="imgs/icon/New folder/4-human-resources.png" alt="">
+                    <h3>إدارة الموارد البشرية</h3>
+                    <p>توفر الشركة خدمات إدارة الموارد البشرية، بما في ذلك وضع السياسات والإجراءات الخاصة بالموظفين وتطبيق أنظمة إدارة الأداء
+                    وإدارة التعويضات والفوائد.</p>
+                </div>
+                <!-- BOX-5 -->
+                <div class="box">
+                    <img src="imgs/icon/New folder/5-box.png" alt="">
+                    <h3>الخدمات اللوجستية</h3>
+                    <p>تقوم الشركة بتوفير الدعم اللوجستي والإداري للشركات الجديدة، مثل إيجاد المكاتب وتأمين المعدات وترتيب الاحتياجات اللوجستية
+                    الأخرى.</p>
+                </div>
+                <!-- BOX-6 -->
+                <div class="box">
+                    <img src="imgs/icon/New folder/6-strategic-plan.png" alt="">
+                    <h3>الاستشارات الاستراتيجية</h3>
+                    <p>تقدم الشركة الاستشارات الاستراتيجية للمساعدة في وضع استراتيجيات النمو والتوسع وتحقيق التنافسية في السوق.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End services -->
+    <!-- Start Offer -->
+    <div class="offer bg-wh pt-20 pb-20 duration-500" id="offer">
+        <div class="container mx-auto px-5">
+            <div class="main-title mb-16 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">عروضنـا</h2>
+                <p class="uppercase text-gray-500">شركة خطوط القمة</p>
+            </div>
+            <div class="box">
+                <img src="imgs/icon/New folder/buildings.png" alt="">
+                <p class="text-2xl font-bold leading-relaxed color-dark">أسس شركتك في سلطنة عمان <br> فقط 15000 ريال سعودي</p>
+            </div>
+            <!-- ---------ROW---------- -->
+            <div class="row">
+                <!-- text -->
+                <div class="col-1 mb-8">
+                    <div class="ul flex gap-10">
+                        <ul>
+                            <li>لا يوجد رسوم خفية</li>
+                            <li>حجز اسم تجاري</li>
+                            <li>السجل التجاري</li>
+                            <li>الموافقات المبدئية</li>
+                            <li>مأذونية الدخول</li>
+                        </ul>
+                        <ul>
+                            <li>تأشيرة الإقامة لصاحب السجل</li>
+                            <li>استقبال من المطار</li>
+                            <li>إقامة فندقية لمدة 3 أيام</li>
+                            <li>شهادة الانتساب للغرفة التجارية</li>
+                            <li>الفحص الطبي</li>
+                        </ul>
+                    </div>
+                    <ul><li>سائق خاص لمساعدتك لإنهاء المعاملات الحكومية</li></ul>
+                    <p>الدفــع بعــد الإنجــاز</p>
+                </div>
+                <!-- pic -->
+                <div class="col-2 ">
+                    <!-- <video id="myVideo" controls>
+                        <source src="imgs/vid.mp4" type="video/mp4">
+                    </video> -->
+                    <img src="imgs/offer.png" alt="offer">
+                </div>
+            </div>
+            <a href="#contact" class="main-btn block w-fit mx-auto">تواصل معنا الآن</a>
+        </div>
+    </div>
+    <!-- End Offer -->
+    <!-- Start Asked -->
+    <div class="asked pt-20 pb-20 bg-li duration-500" id="team">
+        <div class="container px-5 mx-auto">
+            <div class="mb-16 w-fit mx-auto relative text-center">
+                <h2 class="text-4xl font-medium mt-5 mb-3 color-gold">الأسئلة الشائعة</h2>
+            </div>
+            <!-- ----------BOXES-------- -->
+            <!-- Start Plus -->
+            <div class="row">
+                <div class="col">
+                    <!-- q1 -->
+                    <div class="q">
+                        <h4>ما الذي يميز شركة خطوط القمة للأعمال العصرية؟</h4>
+                        <p>شركة خطوط القمة للأعمال العصرية شركة عماني معتمده لها كيان تقع في صلالة في سلطنة عمان
+                        ونحن مجموعة من خبراء واستشاريي الأعمال نقدم خدمات تأسيس الشركات بمختلف النشاطات والأشكال القانونية في صلالة.</p>
+                    </div>
+                    <!-- q2 -->
+                    <div class="q">
+                        <h4>ماهي خطوات تأسيس الشركات ؟</h4>
+                        <p>الخطوة الأولى: تأسيس الشركة تتضمن إصدار جميع الأوراق القانونية: السجل التجاري شهادة الانتساب الشهادة الضريبية <br> الخطوة الثانية : إصدار الماذونية وتأشيرة الدخول الخطوة الثالثة: الفحص الطبي وإصدار الإقامة</p>
+                    </div>
+                    <!-- q3 -->
+                    <div class="q">
+                        <h4>ما هو الحد الأدنى لرأس المال المطلوب لتأسيس شركة؟</h4>
+                        <p>غير محدد</p>
+                    </div>
+                    <!-- q4 -->
+                    <div class="q">
+                        <h4>ما شروط إنشاء شركة في سلطنة عمان ؟</h4>
+                        <p>لا يوجد أي شروط ، فقط صورة شخصية وصورة من جواز السفر و اسم الشركة والأنشطة</p>
+                    </div>
+                    <!-- q5 -->
+                    <div class="q">
+                        <h4>ما هو عدد التراخيص الذي يمكن للمستثمر الأجنبي تملكها كحد أقصى ؟</h4>
+                        <p>غير محدد</p>
+                    </div>
+                    <!-- q6 -->
+                    <div class="q">
+                        <h4>ما الأنشطة المسموح بها ؟</h4>
+                        <p>جميع الأنشطة مسموح بها</p>
+                    </div>
+                    <!-- q7 -->
+                    <div class="q">
+                        <h4>ما هي الفترة الزمنية التي يتطلبها تأسيس شركة في سلطنة عمان؟</h4>
+                        <p>من اسبوع إلى اسبوعين</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- q -->
+                    <div class="q">
+                        <h4>هل يتطلب تأسيس الشركة الحضور شخصيا؟</h4>
+                        <p>حيث سوف نقوم بعمل جميع الإجراءات الحكومية نيابه عنك فقط يحتاج حضورك في الخطوة الثالثة للفحص الطبي واستلام الإقامة</p>
+                    </div>
+                    <!-- q1 -->
+                    <div class="q">
+                        <h4>هل يتطلب شريك عماني ؟</h4>
+                        <p>لا ، تملك ١٠٠% دون الحاجة إلى شريك عماني</p>
+                    </div>
+                    <!-- q2 -->
+                    <div class="q">
+                        <h4>هل تتطلب عملية التأٍسيس القيام بأية إجراءات من قبلي؟</h4>
+                        <p>لا ، خطوط القمة تتولى مهمة القيام بجميع الإجراءات</p>
+                    </div>
+                    <!-- q3 -->
+                    <div class="q">
+                        <h4>هل يمكن استخراج إقامة لأولادي؟</h4>
+                        <p>نعم يمكن استخراج إقامة للأولاد ولجميع الأقارب من الدرجة الأولى.</p>
+                    </div>
+                    <!-- q4 -->
+                    <div class="q">
+                        <h4>كم تكلفة ومدة إقامة المستثمر؟</h4>
+                        <p>٤٥٠٠ ريال سعودي لسنتين</p>
+                    </div>
+                    <!-- q5 -->
+                    <div class="q">
+                        <h4>كم تكلفة ومدة إقامة الاولاد ؟</h4>
+                        <p>اقل من ١٨ سنة ٧٠٠ ريال سعودي للسنتين اكبر من ١٨ سنة ٤٥٠٠ ريال سعودي للسنتين</p>
+                    </div>
+                    <!-- q6 -->
+                    <div class="q">
+                        <h4>هل هناك مصاريف مخفية؟</h4>
+                        <p>لا، التعامل بشفافية هو من أهم مبادئنا</p>
+                    </div>
+                    <!-- q7 -->
+                    <div class="q">
+                        <h4>لماذا عليا اختيار شركة خطوط القمة للأعمال العصرية</h4>
+                        <p>يمكنك تجربة خداماتنا لمعرفة الفرق</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Asked -->
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+        <div class="container px-2 mx-auto">
+            <div class="main-title mb-16 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">تواصل معنا عبر واتس آب</h2>
+                <p class="uppercase text-gray-500">شركة خطوط القمة</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>واتــس آب</h3>
+                    <p>0096899159482</p>
+                    <a href="https://api.whatsapp.com/send?phone=0096899159482" target="_blank">أرســــل رســالــة</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container px-5 mx-auto">
+            <p class="copyright">جميع الحقوق محفوظة &copy; <span>خطوط القمة</span></p>
+            <p>تم تصميمه بواسطة <a href="https://mohammedgomaa22.github.io/My-Portfolio" target="_blank">محمـــد جمعـــة</a></p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- JS File -->
+    <script src="main.js"></script>
+</body>
+</html>
